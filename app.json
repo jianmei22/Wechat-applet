@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/index/index",
+    "pages/blog/blog"  
+    ],
+  "window": {
+    "backgroundColor": "#82E0AA",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#82E0AA",
+    "navigationBarTitleText": "jianmei22",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

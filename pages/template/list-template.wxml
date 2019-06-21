@@ -1,0 +1,18 @@
+<template name="listTmp">
+	<view class="tmpContainer">
+	<!-- 第一部分 -->
+		<view class="avatar_data">
+			<image src="{{avatar}}" ></image>
+			<text>{{date}}</text>
+		</view>
+		<image class="blogImg" src="{{blog_img}}" ></image>
+		<text class='blog'>{{key_word}}</text>
+		<!-- 收藏和查看部分 -->
+		<view class="collection">
+			<text>{{view_icon}}</text>
+			<image src="/images/shoucang.png" ></image>
+			<text>{{love_icon}}</text>
+			<image  src="/images/chakan.png" ></image>
+		</view>
+	</view>
+</template>

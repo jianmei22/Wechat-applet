@@ -1,0 +1,33 @@
+<!--/pages/list/list.wxml-->
+
+<!-- 引入模板 -->
+<import src='/pages/template/list-template.wxml' />
+
+<!-- 轮播图区域 -->
+<view>
+  <swiper indicator-dots indicator-color='#D5F5E3' indicator-active-color='#E6B0AA'>
+    <swiper-item>
+      <image src='/images/three.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/two.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/one.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/four.jpg'></image>
+    </swiper-item>
+  </swiper>
+
+  <!--使用列表渲染  -->
+  <block wx:for='{{listArr}}' wx:key = '{{index}}'>
+  <!-- 绑定点击事件,跳转到详情页 -->
+    <view catchtap='toBlog' data-index='{{index}}'>
+      <!-- 使用模板，注意名字 -->
+      <!-- 三点运算符，遍历对象 -->
+      <template is="listTmp" data = '{{...item}}'></template>
+    </view>
+  </block>
+
+</view>

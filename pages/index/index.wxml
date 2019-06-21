@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="indexContainer">
+  <image class='avatar' src='{{userInfo.avatarUrl}}'></image>
+  <button bindgetuserinfo='handleGetUserInfo' style='display: {{isShow ? "block" : "none"}}' open-type='getUserInfo'>获取登录信息</button>
+  <!-- {{msg}}引入msg的数据 -->
+  <text class='userName'>{{userInfo.nickName}}</text>
+  <view catchtap='handleParent' class='goBlog'  wx:if='{{startShow}}'>
+    <text catchtap='handleClick'>开始博客之旅</text>
+  </view>
+</view>
